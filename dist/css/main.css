@@ -335,7 +335,7 @@ aside.menu .top-buttons a{text-decoration:none;color:#b7b7b7;text-decoration:non
 aside.menu .top-buttons a:hover{text-decoration:none;color:#b7b7b7;text-decoration:none;font-family:'playfair_displayblack';font-weight:600;font-size:18px;opacity:.5}
 aside.menu .middle-buttons a{text-decoration:none;color:#b7b7b7;font-family:'Lato',sans-serif;font-weight:400;font-size:11px;vertical-align:baseline;letter-spacing:.3em}
 aside.menu .middle-buttons a:hover{text-decoration:none;color:#b7b7b7;font-family:'Lato',sans-serif;font-weight:400;font-size:11px;vertical-align:baseline;letter-spacing:.3em;opacity:.5}
-aside.menu .middle-buttons{position:absolute;top:50%;left:47%;width:800px;margin:-45px 0 0 -400px;transform:rotate(90deg)}
+aside.menu .middle-buttons{position:absolute;top:50%;left:47%;width:800px;margin:-45px 0 0 -400px;-webkit-transform:rotate(90deg);transform:rotate(90deg)}
 aside.menu .middle-buttons ul{text-align:center}aside.menu .middle-buttons ul li{display:inline-block;padding-left:20px}
 aside.menu .bas-buttons{text-align:center;position:absolute;bottom:45px;right:22px;width:100%;z-index:1}
 aside.menu .bas-buttons a{text-align:center;text-decoration:none;color:#b7b7b7;font-family:'playfair_displayblack';font-weight:400;font-size:13px}
@@ -387,8 +387,8 @@ video{margin-top:10rem;width:1542px}#open-ephemere{text-decoration:none;color:bl
 .project_slide_num{position:absolute;right:0;margin-right:42%;color:black;font-family:'lato';font-weight:200;font-size:.8vw;letter-spacing:.2em;line-height:2.5vw;top:10%;cursor:pointer}
 .project_slide_num span:hover{font-weight:600}.project_slide_num span.active{font-weight:600}
 .fleche_img:hover{margin-left:5px}.project_slider{position:absolute;width:100%;height:100%;bottom:0;left:0}
-.project_slide{position:absolute;width:100%;height:100%;bottom:0;left:0}.fleche_img{vertical-align:top}
-#project_veille{background-image:url("../img/slider/veille3.png");background-repeat:no-repeat;background-size:cover;width:50%;height:100%}
+.project_slide{position:absolute;width:100%;height:100%;bottom:0;left:0;overflow:hidden}
+.fleche_img{vertical-align:top}#project_veille{background-image:url("../img/slider/veille3.png");background-repeat:no-repeat;background-size:cover;width:50%;height:100%}
 #project_ephemere{background-image:url("../img/slider/ephemere5.png");background-repeat:no-repeat;background-size:cover;width:50%;height:100%}
 #project_hello{background-image:url("../img/slider/hello3.png");background-repeat:no-repeat;background-size:cover;width:50%;height:100%}
 #project_different{background-image:url("../img/slider/different3.png");background-repeat:no-repeat;background-size:cover;width:50%;height:100%}
