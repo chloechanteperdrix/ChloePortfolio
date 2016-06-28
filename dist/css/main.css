@@ -1,4 +1,6 @@
 @charset "UTF-8";/* *  Font Awesome 4.4.0 by @davegandy - http://fontawesome.io - @fontawesome *  License - http://fontawesome.io/license (Font: SIL OFL 1.1, CSS: MIT License) */@font-face{font-family:'FontAwesome';src:url("../fonts/fontawesome-webfont.eot?v=4.4.0");src:url("../fonts/fontawesome-webfont.eot?#iefix&v=4.4.0") format("embedded-opentype"),url("../fonts/fontawesome-webfont.woff2?v=4.4.0") format("woff2"),url("../fonts/fontawesome-webfont.woff?v=4.4.0") format("woff"),url("../fonts/fontawesome-webfont.ttf?v=4.4.0") format("truetype"),url("../fonts/fontawesome-webfont.svg?v=4.4.0#fontawesomeregular") format("svg");font-weight:normal;font-style:normal}
+@font-face{font-family:'playfair_displayblack';src:url('../font/playfairdisplay-black-webfont.eot');src:url('../font/playfairdisplay-black-webfont.eot?#iefix') format('embedded-opentype'),url('../font/playfairdisplay-black-webfont.woff2') format('woff2'),url('../font/playfairdisplay-black-webfont.woff') format('woff'),url('../font/playfairdisplay-black-webfont.ttf') format('truetype'),url('../font/playfairdisplay-black-webfont.svg#playfair_displayblack') format('svg');font-weight:normal;font-style:normal}
+@font-face{font-family:'playfair_displayregular';src:url('../font/playfairdisplay-regular-webfont.eot');src:url('../font/playfairdisplay-regular-webfont.eot?#iefix') format('embedded-opentype'),url('../font/playfairdisplay-regular-webfont.woff2') format('woff2'),url('../font/playfairdisplay-regular-webfont.woff') format('woff'),url('../font/playfairdisplay-regular-webfont.ttf') format('truetype'),url('../font/playfairdisplay-regular-webfont.svg#playfair_displayregular') format('svg');font-weight:normal;font-style:normal}
 .fa{display:inline-block;font:normal normal normal 14px/1 FontAwesome;font-size:inherit;text-rendering:auto;-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale}
 .fa-lg{font-size:1.33333333em;line-height:.75em;vertical-align:-15%}.fa-2x{font-size:2em}
 .fa-3x{font-size:3em}.fa-4x{font-size:4em}.fa-5x{font-size:5em}.fa-fw{width:1.28571429em;text-align:center}
@@ -327,51 +329,78 @@
 .fa-fonticons:before{content:"\f280"}*{box-sizing:border-box}
 body{margin:0}@media only screen and (min-device-width:1025px){*{box-sizing:border-box}
 body{background-color:#fafafa;display:block}#index html{background:url(../img/image-2.png) no-repeat center center fixed;-webkit-background-size:cover;-moz-background-size:cover;-o-background-size:cover;background-size:cover}
-html,body{height:100%;margin:0;padding:0;border:0;vertical-align:baseline}#background{background-image:url("../img/image-4.png");background-repeat:no-repeat;background-attachment:fixed;background-size:cover;background-position:100% 100%}
-#foreground{background-image:url("../img/image-2.png");background-repeat:no-repeat;background-attachment:fixed;background-size:cover;background-position:100% 100%}
-#fore-foreground{background-image:url("../img/image-3.png");background-repeat:no-repeat;background-attachment:fixed;background-size:cover;background-position:100% 100%}
-#fore-fore-foreground{background-image:url("../img/image-1.png");background-repeat:no-repeat;background-attachment:fixed;background-size:cover;background-position:100% 100%}
-.mouse-bg{left:0;right:0;bottom:0;top:0;position:fixed;z-index:-1}aside.menu{position:fixed;top:0;bottom:0;right:0;width:100px;z-index:10;font-size:0}
+html,body{height:100%;margin:0;padding:0;border:0;vertical-align:baseline}#loading{position:fixed;z-index:9999;background:url('../img/loading.gif') 50% 50% no-repeat;top:0;left:0;height:100%;width:100%;cursor:wait}
+aside.menu{position:fixed;top:0;bottom:0;right:0;width:90px;z-index:10;font-size:0}
 aside.menu .content{position:absolute;top:0;right:-1px;bottom:0;left:-1px;background:#fff;z-index:0}
-aside.menu .top-buttons{position:absolute;top:45px;left:45px;width:100%;z-index:1}
-aside.menu .top-buttons a{text-decoration:none;color:#b7b7b7;text-decoration:none;font-family:'playfair_displayblack',sans-serif;font-weight:400;font-size:16px}
+aside.menu .top-buttons{position:absolute;top:45px;left:35px;width:100%;z-index:1}
+aside.menu .top-buttons a{text-decoration:none;color:#b7b7b7;text-decoration:none;font-family:'playfair_displayblack';font-weight:600;font-size:18px}
+aside.menu .top-buttons a:hover{text-decoration:none;color:#b7b7b7;text-decoration:none;font-family:'playfair_displayblack';font-weight:600;font-size:18px;opacity:.5}
 aside.menu .middle-buttons a{text-decoration:none;color:#b7b7b7;font-family:'Lato',sans-serif;font-weight:400;font-size:11px;vertical-align:baseline;letter-spacing:.3em}
-aside.menu .middle-buttons{position:absolute;top:50%;left:50%;width:800px;margin:-45px 0 0 -400px;transform:rotate(90deg)}
+aside.menu .middle-buttons a:hover{text-decoration:none;color:#b7b7b7;font-family:'Lato',sans-serif;font-weight:400;font-size:11px;vertical-align:baseline;letter-spacing:.3em;opacity:.5}
+aside.menu .middle-buttons{position:absolute;top:50%;left:47%;width:800px;margin:-45px 0 0 -400px;transform:rotate(90deg)}
 aside.menu .middle-buttons ul{text-align:center}aside.menu .middle-buttons ul li{display:inline-block;padding-left:20px}
-aside.menu .bas-buttons{position:absolute;bottom:45px;right:17px;width:100%;z-index:1}
-aside.menu .bas-buttons a{text-decoration:none;color:#b7b7b7;font-family:'playfair_displayblack',sans-serif;font-weight:400;font-size:12px}
+aside.menu .bas-buttons{text-align:center;position:absolute;bottom:45px;right:22px;width:100%;z-index:1}
+aside.menu .bas-buttons a{text-align:center;text-decoration:none;color:#b7b7b7;font-family:'playfair_displayblack';font-weight:400;font-size:13px}
+aside.menu .bas-buttons a:hover{text-decoration:none;color:#b7b7b7;opacity:.5;font-family:'playfair_displayblack';font-weight:400;font-size:13px}
 aside.menu .bas-buttons ul{text-align:center}aside.menu .bas-buttons ul li{margin-top:15px}
-.heading a{color:white;font-family:'Lato',sans-serif;font-weight:600;font-size:16px;letter-spacing:.2em}
-.heading{position:absolute;top:35px;left:45px}.heading p{color:white;font-family:'Lato',sans-serif;font-weight:300;font-size:14px;letter-spacing:.2em;margin-top:7px}
-a{text-decoration:none}#trait{width:23px;height:4px;background-color:white;position:absolute;margin-top:3px}
-#photo{display:inline-block;width:45%;height:100%;background-image:url("../img/chloe.png");background-attachment:fixed;background-size:20%;background-position:-25% 50%;border:35px solid #fff}
-#about{height:100vh;width:100vw;background-color:#fafafa;position:absolute;bottom:0;margin-left:0;color:black;font-family:'Lato',sans-serif;font-weight:400;font-size:13px;letter-spacing:.16em;line-height:1.8em}
-#about #contact-description{display:inline-block;position:relative;bottom:150px;left:15%}
-#about p{display:inline-block;line-height:4.5em}#about #about_trait{width:210px;height:1px;background-color:#b7b7b7;margin-top:17px;opacity:.3}
-#about #about_trait2{width:210px;opacity:.3;height:1px;background-color:#b7b7b7;margin-top:17px}
-#about #about_num{margin-top:17px}#about #about_apprentissage{margin-top:17px}h2{color:black;font-family:'Lato',sans-serif;font-weight:600;font-size:18px;letter-spacing:.2em}
-.bouton a{text-decoration:none;color:black;font-family:'Lato',sans-serif;font-weight:600;font-size:11px;border:solid;border-color:black;border-width:1px;padding-top:20px;padding-bottom:20px;padding-left:40px;padding-right:40px}
+.heading #titre_home_apparition{color:#575757;font-family:'playfair_displayblack';font-weight:600;font-size:3.5vw;letter-spacing:.16em;text-align:left}
+.heading p{color:#575757;font-family:'Lato',sans-serif;font-weight:300;font-size:1.5vw;letter-spacing:.2em;line-height:1.8em;margin-top:18px}
+a{text-decoration:none}.home_losange{margin-top:10px;margin-bottom:10px;width:30px;height:30px}
+.heading{position:absolute;top:0;left:0;margin-top:15%;margin-left:50%}.home_image{width:40%;height:40%;margin-left:15%;margin-top:6%;margin-bottom:7%}
+#close-contact{font-family:'Lato';font-weight:400;font-size:20px}
+#about{height:100vh;width:100vw;background-color:#fafafa;position:absolute;bottom:0;margin-left:0}
+#contact_description{position:absolute;bottom:0;margin-left:15%;margin-bottom:10%}
+#contact_description p{line-height:4.5em;font-family:'Lato',sans-serif;font-weight:400;font-size:1.2vw;letter-spacing:.16em;line-height:1.8em;width:35%}
+#titre_about{color:black;font-family:'playfair_displaybold';font-weight:600;font-size:5vw;letter-spacing:.1em}
+#about_trait1{width:22px;height:6px;background-color:#ea9b7c;margin-bottom:20px;margin-top:20px}
+#about_num{line-height:4.5em;font-family:'Lato',sans-serif;font-weight:600;font-size:1.2vw;letter-spacing:.16em;line-height:1.8em;width:35%;position:absolute;right:0;bottom:0;margin-right:10%}
+#about_logo{position:absolute;left:0;top:0;margin-top:10%;margin-left:15%}.bouton a{text-decoration:none;color:black;font-family:'Lato',sans-serif;font-weight:600;font-size:11px;border:solid;border-color:black;border-width:1px;padding-top:20px;padding-bottom:20px;padding-left:40px;padding-right:40px}
 .bouton a:hover{background-color:black;color:white;transition-duration:.3s}.bouton{padding-top:75px}
 #test p{opacity:0;margin-top:25px;font-size:21px;text-align:center;-webkit-transition:opacity 2s ease-in;-moz-transition:opacity 2s ease-in;-o-transition:opacity 2s ease-in;-ms-transition:opacity 2s ease-in;transition:opacity 2s ease-in}
-​ .projet_header_image{width:400px;height:400px;margin-top:200px;position:absolute;top:0}
+​ .projet_header_image{position:absolute;top:0}.project_image_double{margin-top:10rem;max-width:38%;margin-right:5%;display:inline-block}
 .project_subtitle{color:#b7b7b7;font-family:'Lato';font-weight:400;font-size:12px;letter-spacing:.2em}
-.project_title{color:black;font-family:'playfair_displayregular';font-weight:400;font-size:60px;letter-spacing:.2em;margin-top:40px}
-.projet_contenair{background:url("../img/ephemere-header.png") left top no-repeat;background-size:100% 400px;text-align:center}
-.projet_contenair2{background:url("../img/different-header.png") left top no-repeat;background-size:100% 400px;text-align:center}
-.projet_contenair3{background:url("../img/veille/veille-header.png") left top no-repeat;background-size:100% 400px;text-align:center}
-.project_description{margin-top:100px;color:#9b9b9b;font-family:'playfair_displayregular',sans-serif;font-weight:200;font-size:14px;letter-spacing:.2em;line-height:26px}
-#projet_header{background-color:#fafafa;text-align:center;padding-right:20%;padding-left:15%;margin-right:10%;margin-left:10%;padding-top:250px;padding-bottom:100px;margin-top:250px}
+.project_title{color:black;font-family:'playfair_displaybold';font-weight:400;font-size:80px;letter-spacing:.1em;margin-top:20px}
+.projet_contenair{background-color:#bec8d4;width:100%;height:10px;text-align:center;position:absolute}
+.projet_contenair2{background-color:#fcdfd3;width:100%;height:10px;text-align:center;position:absolute}
+.projet_contenair3{background-color:#a8c2bb;width:100%;height:10px;text-align:center;position:absolute}
+.projet_contenair4{background-color:#fcdcdd;width:100%;height:10px;text-align:center;position:absolute}
+.projet_contenair5{background-color:#c1bbee;width:100%;height:10px;text-align:center;position:absolute}
+.project_description{margin-top:100px;color:#9b9b9b;font-family:'playfair_displayregular';font-weight:200;font-size:1.3vw;letter-spacing:.2em;line-height:2.6vw}
+#projet_header{background-color:#fafafa;text-align:center;padding-right:20%;padding-left:15%;margin-right:10%;margin-left:10%;padding-top:150px;padding-bottom:100px;margin-top:50px}
 .project_image{margin-top:10rem;max-width:100%;vertical-align:middle}.project_info{margin-right:20%;margin-left:15%;margin-top:275px;margin-bottom:100px;display:flex}
 .project_type{width:35%;color:#b7b7b7;font-family:'Lato';font-weight:400;font-size:12px;letter-spacing:.2em;line-height:25px}
 .project_date{width:35%;margin-left:45%;color:#b7b7b7;font-family:'Lato';font-weight:400;font-size:12px;letter-spacing:.2em;line-height:25px}
 footer{margin-top:150px;background-color:#e3e3e3;position:absolute;left:0;right:0}
 .footer_texte{color:white;font-family:'Lato';font-weight:200;font-size:10px;letter-spacing:.2em;line-height:25px;margin-top:30px;margin-bottom:30px;margin-left:45px}
-.link_button{text-decoration:none;color:white;font-family:'Lato',sans-serif;font-weight:400;font-size:12px;border:solid;border-color:white;border-width:1px;padding-top:20px;padding-bottom:20px;padding-left:50px;padding-right:50px;letter-spacing:.15em}
-.link_button_container{position:absolute;margin-left:50%;bottom:0;-webkit-transform:translate(-50%,-50%);transform:translate(-50%,-50%);margin-bottom:60px}
-.project_slide_title{color:white;font-family:'playfair_displayregular';font-weight:400;font-size:75px;letter-spacing:.1em;margin-bottom:2px}
-.project_slide_description{color:white;font-family:'lato';font-weight:200;font-size:12px;letter-spacing:.2em}
-.project_slide_header{text-align:center;position:absolute;top:45%;left:50%;-webkit-transform:translate(-50%,-50%);transform:translate(-50%,-50%)}
-.project_slide_background{background-color:black;background-repeat:no-repeat;background-attachment:fixed;background-size:cover;width:100%;height:100%}
-.project_slide_num{position:absolute;margin-left:50px;color:white;font-family:'lato';font-weight:200;font-size:12px;letter-spacing:.2em;line-height:25px;top:50%;-webkit-transform:translate(-50%,50%);transform:translate(-50%,-50%)}
-#about{display:none}}#work_page{display:none;height:100vh}#work_page #project_random{display:none}
-a{cursor:pointer}#work_page{height:100vh;border:3px solid white;background:#ff2f54}
+video{margin-top:10rem;width:1542px}#open-ephemere{text-decoration:none;color:black;font-family:'Lato',sans-serif;font-weight:400;font-size:12px;letter-spacing:.15em;border-bottom:solid;border-width:3px;border-color:#ea9b7c;padding-bottom:8px}
+#open-montgolfiere{text-decoration:none;color:black;font-family:'Lato',sans-serif;font-weight:400;font-size:12px;letter-spacing:.15em;border-bottom:solid;border-width:3px;border-color:#ea9b7c;padding-bottom:8px}
+#open-montgolfiere:hover{text-decoration:none;color:black;font-family:'Lato',sans-serif;font-weight:400;font-size:12px;background-color:white;padding-top:20px;padding-bottom:20px;padding-left:60px;padding-right:60px;letter-spacing:.15em}
+#open-different:hover{text-decoration:none;color:black;font-family:'Lato',sans-serif;font-weight:400;font-size:12px;background-color:white;padding-top:20px;padding-bottom:20px;padding-left:60px;padding-right:60px;letter-spacing:.15em}
+#open-hello:hover{text-decoration:none;color:black;font-family:'Lato',sans-serif;font-weight:400;font-size:12px;background-color:white;padding-top:20px;padding-bottom:20px;padding-left:60px;padding-right:60px;letter-spacing:.15em}
+#open-veille:hover{text-decoration:none;color:black;font-family:'Lato',sans-serif;font-weight:400;font-size:12px;background-color:white;padding-top:20px;padding-bottom:20px;padding-left:60px;padding-right:60px;letter-spacing:.15em}
+#open-ephemere:hover{text-decoration:none;color:black;font-family:'Lato',sans-serif;font-weight:600;font-size:12px;letter-spacing:.15em}
+#open-hello{text-decoration:none;color:black;font-family:'Lato',sans-serif;font-weight:400;font-size:12px;letter-spacing:.15em;border-bottom:solid;border-width:3px;border-color:#ea9b7c;padding-bottom:8px}
+#open-different{text-decoration:none;color:black;font-family:'Lato',sans-serif;font-weight:400;font-size:12px;letter-spacing:.15em;border-bottom:solid;border-width:3px;border-color:#ea9b7c;padding-bottom:8px}
+#open-veille{text-decoration:none;color:black;font-family:'Lato',sans-serif;font-weight:400;font-size:12px;letter-spacing:.15em;border-bottom:solid;border-width:3px;border-color:#ea9b7c;padding-bottom:8px}
+.link_button_container{margin-top:25%;text-align:center}.project_slide_title{color:black;font-family:'playfair_displaybold';font-weight:600;font-size:4.5vw;letter-spacing:.08em;margin-bottom:2px;line-height:55px}
+.project_slide_description{color:black;font-family:'lato';font-weight:200;font-size:1vw;letter-spacing:.2em;margin-top:25px;margin-bottom:50px}
+.project_slide_header{text-align:center;position:absolute;width:25%;top:40%;right:15%}
+.project_slide_header2{background-image:url("../img/logo2.png");background-repeat:no-repeat;background-position:center}
+.project_slide_num{position:absolute;right:0;margin-right:42%;color:black;font-family:'lato';font-weight:200;font-size:.8vw;letter-spacing:.2em;line-height:2.5vw;top:10%;cursor:pointer}
+.project_slide_num span:hover{font-weight:600}.fleche_img:hover{margin-left:5px}.project_slider{position:absolute;width:100%;height:100%;bottom:0;left:0}
+.project_slide{position:absolute;width:100%;height:100%;bottom:0;left:0}.fleche_img{vertical-align:top}
+#project_veille{background-image:url("../img/slider/veille3.png");background-repeat:no-repeat;background-size:cover;width:50%;height:100%}
+#project_ephemere{background-image:url("../img/slider/ephemere5.png");background-repeat:no-repeat;background-size:cover;width:50%;height:100%}
+#project_hello{background-image:url("../img/slider/hello3.png");background-repeat:no-repeat;background-size:cover;width:50%;height:100%}
+#project_different{background-image:url("../img/slider/different3.png");background-repeat:no-repeat;background-size:cover;width:50%;height:100%}
+#project_montgolfiere{background-image:url("../img/slider/goodmorning3.png");background-repeat:no-repeat;background-size:cover;width:50%;height:100%}
+#ephemere .projet_contenair{position:absolute;width:100%;top:0;left:0;text-align:center}
+#different .projet_contenair2{position:absolute;width:100%;top:0;left:0;text-align:center}
+#hello .projet_contenair2{position:absolute;width:100%;top:0;left:0;text-align:center}
+#montgolfiere .projet_contenair4{position:absolute;width:100%;top:0;left:0;text-align:center}
+#veille .projet_contenair3{position:absolute;width:100%;top:0;left:0;text-align:center}
+#home{background-image:url("../img/font-chloe.png");background-repeat:no-repeat;background-attachment:fixed;background-size:cover;background-position:100% 100%}
+#about{display:none}#ephemere{display:none}#work_page{display:none}#different{display:none}
+#veille{display:none}#montgolfiere{display:none}#hello{display:none}#project_different{display:none}
+#project_veille{display:none}#project_montgolfiere{display:none}#project_hello{display:none}
+a{cursor:pointer}#work_page{height:100vh;width:100vh;
