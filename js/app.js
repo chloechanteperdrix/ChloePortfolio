@@ -14,6 +14,11 @@ $(document).ready(function () {
         closeHome();
     });
 
+    $("#open-work-home").on('click', function () {
+        $("#work_page").fadeIn();
+        closeHome();
+    });
+
     $(".open-contact").on('click', function () {
         $("#about").fadeIn();
     });
