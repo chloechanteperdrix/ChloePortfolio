@@ -422,7 +422,7 @@ video{margin-top:10rem;width:85%}#open-ephemere{text-decoration:none;color:black
 #hello .projet_contenair2{position:absolute;width:100%;top:0;left:0;text-align:center}
 #montgolfiere .projet_contenair4{position:absolute;width:100%;top:0;left:0;text-align:center}
 #veille .projet_contenair3{position:absolute;width:100%;top:0;left:0;text-align:center}
-#home{display:none;width:100%;height:100%;background-image:url("../img/fond-3.png");background-repeat:no-repeat;background-attachment:fixed;background-size:cover;background-position:100% 100%}
+#home{overflow:hidden;display:none;width:100%;height:100%;background-image:url("../img/fond-3.png");background-repeat:no-repeat;background-attachment:fixed;background-size:cover;background-position:100% 100%}
 #about{display:none}#ephemere{display:none}#work_page{display:none}#different{display:none}
 #veille{display:none}#montgolfiere{display:none}#hello{display:none}#project_different{display:none}
 #project_veille{display:none}#project_montgolfiere{display:none}#project_hello{display:none}

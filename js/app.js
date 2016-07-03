@@ -59,8 +59,7 @@ $(document).ready(function () {
 
     //$("#titre_home_apparition").delay(3000).slideToggle("8000");
 
-    //$("#loading").delay(2500).fadeOut("4000");
-    $("#loading").delay(0).fadeOut("1000");
+    $("#loading").delay(2000).fadeOut("1000");
 
     setTimeout(function () {
         $("#home").css("display", "block");
@@ -70,7 +69,7 @@ $(document).ready(function () {
             ease: Power2.easeOut
         });
         TweenLite.fromTo(".heading", 1.5, {xPercent: 80, opacity: 0}, {xPercent: 0, opacity: 1, ease: Power2.easeOut});
-    }, 0);
+    }, 2000);
 
 
     $(".project_slide_num span").on('click', function (e) {
